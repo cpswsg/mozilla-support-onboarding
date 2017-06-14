@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  @@include('header.html')
+
+  <body class="get-involved">
+    <!-- header -->
+    <header>
+      @@include('nav-utility.html')
+
+      @@include('nav-main.html')
+    </header>
+    <!-- //header -->
+
+    @@include('intro.html', {
+      "intro-head": " Help users on Twitter ",
+      "intro-desc": " Love Firefox? Love Twitter? Combine both and help Firefox users on Twitter.",
+      "intro-bg": "linear-gradient(to right, #00d2ff, #3a7bd5);"
+    })
+
+    @@include('search.html')
+
+    @@include('breadcrumbs.html', { "active": " Help Users on Twitter " })
+
+    @@include('get-involved-intro.html', {
+      "title": "Answer Questions on Social Media",
+      "desc": "Love Firefox? Love Twitter and Facebook? When our users have questions, the first place a lot of them go is straight to social media. In any given month, we could see up to 14,000 questions and/or comments on Twitter and Facebook and we want each of those users to know we hear them and are here to help. The Social Support team is a community of enthusiastic volunteers helping to solve issues, share our knowledge and build relationships through social media that will empower our users to get the most out of their Firefox experience. Your contributions could reach millions of users worldwide, and you can do it from the comfort of your couch.",
+      "quote": "Solving 1 issue helps up to 1,000 users a day"
+    })
+
+    <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">Join Us</h2>
+    				<p class="get-involved-desc">Fill out your email address below and we’ll reach out with the next steps!</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "sign-in",
+    				"step-title": "Register to see the next steps",
+    				"step-desc": "All you need is an account to get started! Please remember to read the Community Guidelines",
+    				"step-button": "Sign Up",
+    				"step-button-link": "register.html"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
+
+    @@include('get-involved-cta.html', {
+      "title": "Need Help?",
+      "desc": "Having trouble with a Mozilla product and want some help? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magni tempore temporibus consectetur.",
+      "button": "Ask a Question",
+      "link": "#"
+    })
+
+@@include('footer.html')
