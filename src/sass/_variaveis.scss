@@ -1,0 +1,49 @@
+$dino-red: #d24735;
+$firefox-orange: #f26c23;
+$market-orange: #f89c24;
+$flame-yellow: #ffcd02;
+$gecko-green: #7dc14c;
+$summit-teal: #3bba99;
+$mobile-blue: #16afe5;
+$developer-blue: #4383bf;
+$nightly-blue: #5a6ba4;
+$aurora-purple: #ab5da4;
+$bikeshed-magenta: #e14164;
+
+$mozilla-cyan: #82d1f5;
+$mozilla-coral: #ff8c8e;
+$mozilla-yellow: #ffed00;
+$mozilla-lilac: #b0b2e9;
+$mozilla-orange: #faba00;
+$mozilla-lime: #b6d806;
+$mozilla-neon-blue: #00ffff;
+$mozilla-neon-pink: #fa8cff;
+$mozilla-neon-green: #abff10;
+
+$sumo-blue: #00a7e0;
+$sumo-purple: #5011b3;
+$sumo-bg: #eaeff2;
+$sumo: #00539f;
+
+$color-light: #fff;
+$color-dark: #000;
+$color-grey: #ccc;
+
+$theme-color: #6ab43e;
+$heading-color: #424242;
+
+$font-family-base: 'Fira Sans', 'Arvo', sans-serif;
+$font-family-heading: 'Arvo', 'Fira Sans', sans-serif;
+$font-size-base: 16px;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.6;
+
+//Responsive Variables
+$large-device: 'only screen and (min-width: 1600px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$desktop-device: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large-mobile:'only screen and (max-width: 767px)';
+$small-mobile: 'only screen and (max-width: 479px)';

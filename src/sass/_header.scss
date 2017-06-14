@@ -1,0 +1,132 @@
+//-----------------------------------------
+// Navigation
+//-----------------------------------------
+.navbar-utility {
+	 background-color: $color-dark;
+
+	.navbar-nav {
+		li {
+			a {
+				color: $color-light;
+				font-size: $font-size-base - 4;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				&:hover,
+				&:focus {
+					background-color: $color-light;
+					color: $color-dark;
+				}
+			}
+
+			&.link-get-involved {
+				background-color: $gecko-green;
+				a:hover {
+					background-color: darken( $gecko-green, 10% );
+					color: $color-light;
+				}
+			}
+		}
+	}
+}
+
+.navbar-moz {
+	background-color: $color-light;
+	border: none;
+	padding: 20px 0;
+	margin-bottom: 0;
+
+	.navbar-brand {
+		padding-top: 8px;
+		padding-right: 0;
+
+		&.logo img {
+			background-color: transparent;
+		}
+	}
+
+	.navbar-nav {
+		> li > .dropdown-menu a {
+			color: $color-dark;
+			padding: 10px 20px;
+		}
+		a {
+			color: $color-dark;
+			text-transform: uppercase;
+
+			&:hover, &:focus {
+				color: $color-dark;
+			}
+		}
+	}
+
+	.nav > li > a:focus, .nav > li > a:hover,
+	.nav > li.active a,
+	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+		background-color: $color-dark;
+		color: $color-light;
+	}
+	.active-action {
+		border: 2px solid $mobile-blue;
+	}
+
+	.navbar-toggle {
+		background-color: $color-light;
+		border-radius: 0;
+		padding: 5px 10px;
+	}
+}
+
+//-----------------------------------------
+// Logo
+//-----------------------------------------
+.logo {
+
+	img {
+		width: 240px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+//-----------------------------------------
+// Intro
+//-----------------------------------------
+.intro {
+	color: $color-light;
+
+	.intro-head {
+		font-size: 3.125rem;
+		font-weight: $font-weight-light;
+		margin-bottom: 0;
+	}
+	.intro-desc {
+		//font-size: $font-size-base * 2.4;
+	}
+	span {
+		background-color: $color-dark;
+		padding: 0 10px;
+	}
+
+	.jumbotron {
+		margin-bottom: 0;
+		padding: 40px 0;
+		text-align: left;
+		background: $mozilla-lilac;
+	}
+}
+
+//-----------------------------------------
+// Search
+//-----------------------------------------
+.search {
+	padding: 20px 0;
+	background-color: $color-dark;
+
+	.form-search {
+		.form-control {
+			border-radius: 0;
+		}
+	}
+}

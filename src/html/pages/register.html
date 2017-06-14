@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	@@include('header.html')
+
+	<body class="registration">
+		<!-- header -->
+		<header>
+			@@include('nav-utility.html')
+
+			@@include('nav-main.html')
+		</header>
+		<!-- //header -->
+
+		@@include('intro.html', {
+			"intro-head": "Registration",
+			"intro-desc": "It takes just a minute to register with the community",
+			"intro-bg": "linear-gradient(to right, #00c3ff, #ffff1c)"
+		})
+
+		@@include('search.html')
+
+		<section class="register">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>All you need is a login name, a password and an email address. If you're already registered, you can <a href="sign-in.html">sign in here</a>.</p>
+					</div>
+
+					<div class="col-sm-12 col-md-7">
+						<form class="register-form">
+							<div class="form-group">
+								<label for="username"><i class="fa fa-asterisk" aria-hidden="true"></i> Username</label> <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Username" data-content="This is the name you'll be known as in the community."><i class="fa fa-question-circle"></i></a>
+								<input type="text" class="form-control" id="username">
+							</div>
+							<div class="form-group">
+								<label for="newpass"><i class="fa fa-asterisk" aria-hidden="true"></i> New password</label> <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Password" data-content="Your password must be between 6 and 20 characters and must not contain your login name."><i class="fa fa-question-circle"></i></a>
+								<input type="password" class="form-control" id="newpass">
+							</div>
+							<div class="form-group">
+								<label for="rtpass"><i class="fa fa-asterisk" aria-hidden="true"></i> Re-type password</label>
+								<input type="password" class="form-control" id="rtpass">
+							</div>
+							<div class="form-group">
+								<label for="email"><i class="fa fa-asterisk" aria-hidden="true"></i> Email</label>
+								<input type="email" class="form-control" id="email">
+							</div>
+							<div class="form-group">
+								<label for="rtemail"><i class="fa fa-asterisk" aria-hidden="true"></i> Re-type Email</label>
+								<input type="rtemail" class="form-control" id="rtemail">
+							</div>
+							<div class="form-group">
+								<label for="volunteer"><i class="fa fa-asterisk" aria-hidden="true"></i> Become a Volunteer</label>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="yesvolunteer" value="yesvolunteer">
+										Yes, will be awesome!
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="novolunteer" value="novolunteer">
+										No, thanks!
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label class="checkbox-inline">
+										<input type="checkbox" id="keepsigned" value="keepsigned" checked="true"> Keep me signed in</a>
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="rtemail">Time zone</label>
+								<select class="lia-form-timezone-input form-control" name="timezone"><option title="GMT -08:00 U.S. Pacific Time" selected="selected" value="US/Pacific">GMT -08:00 U.S. Pacific Time</option><option title="GMT -07:00 U.S. Mountain Time" value="US/Mountain">GMT -07:00 U.S. Mountain Time</option><option title="GMT -06:00 U.S. Central Time" value="US/Central">GMT -06:00 U.S. Central Time</option><option title="GMT -05:00 U.S. Eastern Time" value="US/Eastern">GMT -05:00 U.S. Eastern Time</option><option title="GMT -09:00 U.S. Alaska Time" value="US/Alaska">GMT -09:00 U.S. Alaska Time</option><option title="GMT -10:00 U.S. Hawaiian Time" value="US/Hawaii">GMT -10:00 U.S. Hawaiian Time</option><option title="-----------" value="">-----------</option><option title="GMT -12:00 Dateline" value="Etc/GMT+12">GMT -12:00 Dateline</option><option title="GMT -11:00 Samoa" value="Pacific/Samoa">GMT -11:00 Samoa</option><option title="GMT -10:00 U.S. Hawaiian Time" value="US/Hawaii">GMT -10:00 U.S. Hawaiian Time</option><option title="GMT -10:00 Aleutian Islands" value="US/Aleutian">GMT -10:00 Aleutian Islands</option><option title="GMT -09:30 Marquesas" value="Pacific/Marquesas">GMT -09:30 Marquesas</option><option title="GMT -09:00 Gambier Islands" value="Pacific/Gambier">GMT -09:00 Gambier Islands</option><option title="GMT -09:00 U.S. Alaska Time" value="US/Alaska">GMT -09:00 U.S. Alaska Time</option><option title="GMT -08:00 U.S. Pacific Time" selected="selected" value="US/Pacific">GMT -08:00 U.S. Pacific Time</option><option title="GMT -08:00 Pitcairn Islands" value="Pacific/Pitcairn">GMT -08:00 Pitcairn Islands</option><option title="GMT -07:00 U.S. Mountain Time" value="US/Mountain">GMT -07:00 U.S. Mountain Time</option><option title="GMT -07:00 U.S. Mountain Time (Arizona)" value="US/Arizona">GMT -07:00 U.S. Mountain Time (Arizona)</option><option title="GMT -06:00 U.S. Central Time" value="US/Central">GMT -06:00 U.S. Central Time</option><option title="GMT -06:00 Mexico" value="Mexico/General">GMT -06:00 Mexico</option><option title="GMT -06:00 Costa Rica" value="America/Costa_Rica">GMT -06:00 Costa Rica</option><option title="GMT -05:00 U.S. Eastern Time" value="US/Eastern">GMT -05:00 U.S. Eastern Time</option><option title="GMT -05:00 Colombia, Peru, South America" value="America/Bogota">GMT -05:00 Colombia, Peru, South America</option><option title="GMT -04:00 Atlantic Time" value="Canada/Atlantic">GMT -04:00 Atlantic Time</option><option title="GMT -04:00 Puerto Rico" value="America/Puerto_Rico">GMT -04:00 Puerto Rico</option><option title="GMT -03:30 Newfoundland, Canada" value="Canada/Newfoundland">GMT -03:30 Newfoundland, Canada</option><option title="GMT -03:00 Argentina" value="America/Buenos_Aires">GMT -03:00 Argentina</option><option title="GMT -03:00 Brazil" value="Brazil/East">GMT -03:00 Brazil</option><option title="GMT -02:00 Mid-Atlantic" value="Atlantic/South_Georgia">GMT -02:00 Mid-Atlantic</option><option title="GMT -01:00 Cape Verde" value="Atlantic/Cape_Verde">GMT -01:00 Cape Verde</option><option title="GMT -01:00 Azores" value="Atlantic/Azores">GMT -01:00 Azores</option><option title="GMT ------ U.K." value="Europe/London">GMT ------ U.K.</option><option title="GMT ------ Iceland" value="Iceland">GMT ------ Iceland</option><option title="GMT +01:00 Spain" value="Europe/Madrid">GMT +01:00 Spain</option><option title="GMT +01:00 Algiers, Africa" value="Africa/Algiers">GMT +01:00 Algiers, Africa</option><option title="GMT +01:00 Central Europe" value="Europe/Amsterdam">GMT +01:00 Central Europe</option><option title="GMT +02:00 Eastern Europe" value="Europe/Athens">GMT +02:00 Eastern Europe</option><option title="GMT +02:00 Tripoli, Africa" value="Africa/Tripoli">GMT +02:00 Tripoli, Africa</option><option title="GMT +02:00 Egypt" value="Egypt">GMT +02:00 Egypt</option><option title="GMT +02:00 Israel" value="Israel">GMT +02:00 Israel</option><option title="GMT +03:00 Saudi Arabia" value="Asia/Riyadh">GMT +03:00 Saudi Arabia</option><option title="GMT +03:30 Iran" value="Iran">GMT +03:30 Iran</option><option title="GMT +03:00 Russia" value="Europe/Moscow">GMT +03:00 Russia</option><option title="GMT +04:00 Samara, Europe" value="Europe/Samara">GMT +04:00 Samara, Europe</option><option title="GMT +04:00 Arabian" value="Asia/Dubai">GMT +04:00 Arabian</option><option title="GMT +04:30 Afghanistan" value="Asia/Kabul">GMT +04:30 Afghanistan</option><option title="GMT +05:00 Pakistan, West Asia" value="Asia/Karachi">GMT +05:00 Pakistan, West Asia</option><option title="GMT +05:00 Yekaterinburg, Asia" value="Asia/Yekaterinburg">GMT +05:00 Yekaterinburg, Asia</option><option title="GMT +05:30 India" value="Asia/Calcutta">GMT +05:30 India</option><option title="GMT +06:00 Bangladesh, Central Asia" value="Asia/Thimphu">GMT +06:00 Bangladesh, Central Asia</option><option title="GMT +06:00 Novosibirsk, Asia" value="Asia/Novosibirsk">GMT +06:00 Novosibirsk, Asia</option><option title="GMT +06:30 Burma" value="Asia/Rangoon">GMT +06:30 Burma</option><option title="GMT +07:00 Bangkok, Hanoi, Jakarta" value="Asia/Bangkok">GMT +07:00 Bangkok, Hanoi, Jakarta</option><option title="GMT +07:00 Krasnoyarsk, Asia" value="Asia/Krasnoyarsk">GMT +07:00 Krasnoyarsk, Asia</option><option title="GMT +08:00 China" value="PRC">GMT +08:00 China</option><option title="GMT +08:00 Singapore" value="Singapore">GMT +08:00 Singapore</option><option title="GMT +08:00 Taiwan" value="Asia/Taipei">GMT +08:00 Taiwan</option><option title="GMT +08:00 Australia (WT)" value="Australia/West">GMT +08:00 Australia (WT)</option><option title="GMT +08:00 Irkutsk, Asia" value="Asia/Irkutsk">GMT +08:00 Irkutsk, Asia</option><option title="GMT +09:00 Japan" value="Japan">GMT +09:00 Japan</option><option title="GMT +09:00 Korea" value="Asia/Seoul">GMT +09:00 Korea</option><option title="GMT +09:00 Yakutsk, Russia" value="Asia/Yakutsk">GMT +09:00 Yakutsk, Russia</option><option title="GMT +09:30 Australia (NT)" value="Australia/North">GMT +09:30 Australia (NT)</option><option title="GMT +09:30 Australia (ST)" value="Australia/Adelaide">GMT +09:30 Australia (ST)</option><option title="GMT +10:00 Australia (ET)" value="Australia/Sydney">GMT +10:00 Australia (ET)</option><option title="GMT +10:00 Australia (Queensland)" value="Australia/Queensland">GMT +10:00 Australia (Queensland)</option><option title="GMT +10:00 Magadan, Asia" value="Asia/Magadan">GMT +10:00 Magadan, Asia</option><option title="GMT +10:30 Australia (Lord Howe)" value="Australia/Lord_Howe">GMT +10:30 Australia (Lord Howe)</option><option title="GMT +11:00 Central Pacific" value="Pacific/Guadalcanal">GMT +11:00 Central Pacific</option><option title="GMT +11:30 Norfolk Islands" value="Pacific/Norfolk">GMT +11:30 Norfolk Islands</option><option title="GMT +12:00 New Zealand" value="Pacific/Auckland">GMT +12:00 New Zealand</option><option title="GMT +12:00 Fiji" value="Pacific/Fiji">GMT +12:00 Fiji</option><option title="GMT +12:00 South Pole, Antarctica" value="Antarctica/South_Pole">GMT +12:00 South Pole, Antarctica</option></select>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label class="checkbox-inline">
+										<input type="checkbox" id="guidelines" value="guidelines" checked="true"> I have read and accept the <a href="https://hwsfp35778.lithium.com/t5/Contributor-Knowledge-Base/Support-Forum-Community-Guidelines/ta-p/1360770" target="_blank">Community Guidelines</a> <i class="fa fa-asterisk" aria-hidden="true"></i>
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary">Register</button>
+								<button type="reset" class="btn btn-default">Reset</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="col-sm-12 col-md-5 register-benefits">
+						<h3>Benefits of joining our community?</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quia, cumque delectus mollitia libero sequi blanditiis animi placeat neque corrupti totam nam enim expedita qui voluptatem architecto omnis, iste!</p>
+						<ul class="list-unstylesd">
+							<li><i class="fa fa-star"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, laborum nam natus, ducimus voluptatum quis repellendus.</li>
+							<li><i class="fa fa-star"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, laborum nam natus, ducimus voluptatum quis repellendus.</li>
+							<li><i class="fa fa-star"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, laborum nam natus, ducimus voluptatum quis repellendus.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+@@include('footer.html')

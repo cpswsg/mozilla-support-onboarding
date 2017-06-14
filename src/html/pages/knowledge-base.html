@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	@@include('header.html')
+
+	<body class="">
+		<!--start-header-->
+		<header>
+			@@include('nav-utility.html')
+
+			@@include('nav-main.html')
+		</header>
+		<!--end-header-->
+
+		@@include('intro.html', {
+			"intro-head": "Firefox",
+			"intro-desc": "Get technical support for Firefox Desktop.",
+			"intro-bg": "linear-gradient(to right, #56b4d3, #348f50)"
+		})
+
+		@@include('search.html')
+
+		<!--start-tiles-->
+		<section class="tiles">
+			<div class="container">
+				<div class="row">			
+
+					@@loop('tiles-loop.html', [
+						{ "tile-title": "Install and Update", "tile-desc": "Get the latest version.", "tile-icon": "download" },
+						{ "tile-title": "Protect your privacy", "tile-desc": "Stay safe and secure.", "tile-icon": "lock" },
+						{ "tile-title": "Sync, save and share", "tile-desc": "Sync and share between devices.", "tile-icon": "refresh" },
+						{ "tile-title": "Personalize Firefox", "tile-desc": "Make Firefox yours.", "tile-icon": "cog" },
+						{ "tile-title": "Fix problems", "tile-desc": "Troubleshoot crashes, errors and other issues.", "tile-icon": "exclamation-triangle" },
+						{ "tile-title": "Advanced and experimental features", "tile-desc": "", "tile-icon": "globe" }
+					])
+
+				</div>
+			</div>
+		</section>
+		<!--end-tiles-->

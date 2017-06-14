@@ -1,0 +1,19 @@
+### macOS ###
+*.DS_Store
+
+### Node ###
+logs
+*.log
+npm-debug.log*
+node_modules/
+.npm
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### SublimeText ###
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace

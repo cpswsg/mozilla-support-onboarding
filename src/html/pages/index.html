@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	@@include('header.html')
+
+	<body class="">
+		<!--start-header-->
+		<header>
+			@@include('nav-utility.html')
+
+			@@include('nav-main.html')
+		</header>
+		<!--end-header-->
+
+		@@include('intro.html', {
+			"intro-head": "Welcome to the community",
+			"intro-desc": "Get technical support for all Firefox family and Thunderbird.",
+			"intro-bg": "linear-gradient(to right, #56b4d3, #348f50)"
+		})
+
+		@@include('search.html')
+
+		<!-- @@include('notes.html', {
+			"icon": "<i class='fa fa-bullhorn fa-4x'></i>",
+			"text": "We’re going through some system changes, that may have slowed responses to your questions. If you had asked a question in the last couple of months, please re-post it and the community will help you as soon as we can. If you’ve registered after February 7th, please register again, the accounts on the previous site were not migrated to this temporary site. If you joined us before February 7, please reset your password if you have trouble logging into this temporary site."
+		}) -->
+
+		<!--start-tiles-->
+		<section class="tiles">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Choose a product or <a href="#">ask the Community</a>!</h2>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="category media">
+							<a href="#">
+								<div class="media-left">
+									<img class="media-object" width="90" src="assets/images/firefox.png" alt="Firefox">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Firefox</h4>
+									<p class="media-desc">Get help for Firefox on Windows, Mac and Linux.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col xs-12 col-sm-6 col-md-4">
+						<div class="category media">
+							<a href="#">
+								<div class="media-left">
+									<img class="media-object" width="90" src="assets/images/firefox-android.png" alt="Firefox for Android">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Firefox for Android</h4>
+									<p class="media-desc">Web browser for Android smartphones and tablets.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col xs-12 col-sm-6 col-md-4">
+						<div class="category media">
+							<a href="#">
+								<div class="media-left">
+									<img class="media-object" width="90" src="assets/images/firefox-ios.png" alt="Firefox for iOS">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Firefox for iOS</h4>
+									<p class="media-desc">Firefox for iPhone, iPad and iTouch devices.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col xs-12 col-sm-6 col-md-4">
+						<div class="category media">
+							<a href="#">
+								<div class="media-left">
+									<img class="media-object" width="90" src="assets/images/firefox-focus.png" alt="Firefox Focus">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Firefox Focus</h4>
+									<p class="media-desc">Automatic privacy browser and content blocker for mobile.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col xs-12 col-sm-6 col-md-4">
+						<div class="category media">
+							<a href="#">
+								<div class="media-left">
+									<img class="media-object" width="90" src="assets/images/thunderbird.png" alt="Thunderbird">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Thunderbird</h4>
+									<p class="media-desc">Email software for Windows, Mac and Linux.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col xs-12 col-sm-6 col-md-4">
+						<div class="category media">
+							<a href="#">
+								<div class="media-left">
+									<img class="media-object" width="90" src="assets/images/sumo.png" alt="Community">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Community</h4>
+									<p class="media-desc">Ask a question about Mozilla's products.</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end-tiles-->
+
+		<!--start-recent-topics-->
+		<section class="recent-discussion">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="recent-discussion-heading">
+							<div class="pull-left"><h2>Recent Discussions</h2></div>
+							<div class="pull-right"><a class="btn btn-primary" href="#">SEE ALL</a></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="recent-discussion-content">
+							<div class="discussion">
+								<div class="col-sm-1">
+									<div class="avatar">
+										<a href="#"><img class="img-circle" src="http://placehold.it/64x64/7dc14c/fff" alt=""></a>
+									</div>
+								</div>
+								<div class="col-sm-8">
+									<div class="topic-info">
+										<div class="subject">
+											<span class="pin_icon" title="Floated Thread"></span>
+											<a class="topic-link" href="#">Firefox crashes Adobe Flash</a>
+										</div>
+										<div class="username text-small">by <a href="#" class="view-profile-link">username</a></div>
+										<div class="topic-post-time">on 01-05-2017 12:38:20 PM</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="reply-info text-right">
+										<div class="reply-count">1 Replies</div>
+										<div class="reply-post-time">Last Activity: yesterday</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="discussion">
+								<div class="col-xs-1 col-sm-1">
+									<div class="avatar">
+										<a href="#"><img class="img-circle" src="http://placehold.it/64x64/16afe5/fff" alt=""></a>
+									</div>
+								</div>
+								<div class="col-xs-8 col-sm-8">
+									<div class="topic-info">
+										<div class="subject">
+											<span class="solved" title="Best Answer"></span>
+											<a class="topic-link" href="#">Why I my getting an error message "Welcome to Parallel Panel" each time I point any domain to firefox browser?</a>
+										</div>
+										<div class="username">by <a href="#" class="view-profile-link">username</a></div>
+										<div class="topic-post-time">on 02-05-2017 10:40:42 AM</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-3">
+									<div class="reply-info text-right">
+										<div class="reply-count">5 Replies</div>
+										<div class="reply-post-time">Last Activity: 5m ago</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="discussion">
+								<div class="col-xs-1">
+									<div class="avatar">
+										<a href="#"><img class="img-circle" src="http://placehold.it/64x64/ab5da4/fff" alt=""></a>
+									</div>
+								</div>
+								<div class="col-xs-8">
+									<div class="topic-info">
+										<div class="subject">
+											<a class="topic-link" href="#">Firefox is connected to a proxy which is refusing connections. Other Browser works fine.</a>
+										</div>
+										<div class="username">by <a href="#" class="view-profile-link">username</a></div>
+										<div class="topic-post-time">on 02-05-2017 11:00:12 AM</div>
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="reply-info text-right">
+										<div class="reply-count">2 Replies</div>
+										<div class="reply-post-time">Last Activity: an hour ago</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="discussion">
+								<div class="col-xs-1">
+									<div class="avatar">
+										<a href="#"><img class="img-circle" src="http://placehold.it/64x64/f26c23/fff" alt=""></a>
+									</div>
+								</div>
+								<div class="col-xs-8">
+									<div class="topic-info">
+										<div class="subject">
+											<a class="topic-link" href="#">Missing Emails after Manual transfer from POP to IMAP (Gmail) Folders</a>
+										</div>
+										<div class="username">by <a href="#" class="view-profile-link">username</a></div>
+										<div class="topic-post-time">on 02-05-2017 14:30:32 AM</div>
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="reply-info text-right">
+										<div class="reply-count">3 Replies</div>
+										<div class="reply-post-time">Last Activity: 2 hours ago</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end-recent-topics-->
+
+		@@include('facts.html')
+
+		<div class="get-involved">
+		@@include('get-involved-cta.html', {
+			"title": "Join with us and get involved",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit est delectus ad praesentium commodi quos nihil ipsum distinctio rem amet repellat facere perferendis eos tempora.",
+			"button": "Become volunteer",
+			"link": "get-involved.html"
+		})
+		</div>
+
+@@include('footer.html')

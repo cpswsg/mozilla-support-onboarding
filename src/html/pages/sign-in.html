@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	@@include('header.html')
+
+	<body class="registration">
+		<!-- header -->
+		<header>
+			@@include('nav-utility.html')
+
+			@@include('nav-main.html')
+		</header>
+		<!-- //header -->
+
+		@@include('intro.html', {
+			"intro-head": "Sign In",
+			"intro-desc": "It takes just a minute to register with the community",
+			"intro-bg": "linear-gradient(to right, #00c3ff, #ffff1c)"
+		})
+
+		@@include('search.html')
+
+		<div class="sign-in">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<form action="index.html" class="">
+									<div class="form-group">
+										<label for="username">Username</label>
+										<input type="text" class="form-control" id="username">
+									</div>
+									<div class="form-group">
+										<label for="pass">Password</label>
+										<input type="password" class="form-control" id="pass">
+									</div>
+									<div class="form-group">
+										<div class="checkbox">
+											<label class="checkbox-inline">
+												<input type="checkbox" id="keepsigned" value="keepsigned" checked="true"> Keep me signed in</a>
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<a href="forgot-password.html">Forgot username or password?</a>
+									</div>
+									<div class="form-group text-center">
+										<button type="submit" class="btn btn-primary">Sign In</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading"><h3>Register now!</h3></div>
+							<div class="panel-body">
+								If you haven't already registered, now is a good time to do so. After you register, you can post to the community, receive email notifications, and lots more. It's quick and it's free! <br><br>
+								<div class="text-center"><a href="register.html" class="btn btn-primary">Register Now</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+@@include('footer.html')

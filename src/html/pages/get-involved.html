@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	@@include('header.html')
+
+	<body class="get-involved">
+		<!--start-header-->
+		<header>
+			@@include('nav-utility.html')
+
+			@@include('nav-main.html')
+		</header>
+		<!--end-header-->
+
+		@@include('intro.html', {
+			"intro-head": "Save the world",
+			"intro-desc": "from the comfort of your couch.",
+			"intro-bg": "linear-gradient(to right, #2bc0e4, #eaecc6);"
+		})
+
+		@@include('search.html')
+
+		<!--start-breadcrumbs-->
+		<section class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<ol class="breadcrumb">
+							<li><a href="index.html"><span class="lnr lnr-home"></span> Home</a></li>
+							<li class="active">Get Involved</li>
+						</ol>
+					</div>
+					<div class="col-sm-2">
+						<a class="btn btn-primary pull-right" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i> Options</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end-breadcrumbs-->
+
+		<!--start-get-involved-intro-->
+		<section class="get-involved-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8">
+						<h2 class="get-involved-title">We need your help!</h2>
+						<p class="get-involved-desc"> Mozilla Support is a community of enthusiastic volunteers and employees trying to support our users around the globe. Join us for an incredible adventure! <br><br> Help millions of users get the most out of their favourite browser. Your contributions will reach millions of users worldwide, and you can do it from the comfort of your couch!</p>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-sm-offset-1">
+						<img class="hero-butler img-responsive" src="https://support-stage.allizom.org/html/assets/gi-hero-butler.png" alt="">
+					</div>
+					<div class="col-xs-12">
+						<blockquote>
+						 Used by more than 400 million people, Mozilla support is fully powered by volunteers
+					 </blockquote>
+				 </div>
+			 </div>
+		 </div>
+	 </section>
+	 <!--end-get-involved-intro-->
+
+		<!--start-get-involved-steps-->
+		<section class="get-involved-steps">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 get-involved-heading">
+						<h2 class="get-involved-title">Pick a way to get involved</h2>
+						<p class="get-involved-desc">All are pretty easy to get started in.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="process-layout">
+							<figure class="process-icon">
+								<i class="fa fa-pencil-square-o fa-5x" aria-hidden="true"></i>
+							</figure>
+							<article class="process-info">
+								<h4>Write Help Articles</h4>
+								<p>If you like writing and teaching then the Knowledge Base is the place for you. Share your wisdom with the world.</p>
+								<div class="text-center"><a href="get-involved-kb.html" class="btn btn-primary">Read more</a></div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="process-layout">
+							<figure class="process-icon">
+								<i class="fa fa-language fa-5x" aria-hidden="true"></i>
+							</figure>
+							<article class="process-info">
+								<h4>Translate help articles</h4>
+								<p>Help articles are not available in your language yet? Let's make Mozilla Support speak your language!</p>
+								<div class="text-center"><a href="get-involved-kb-l10n.html" class="btn btn-primary">Read more</a></div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="process-layout">
+							<figure class="process-icon">
+								<i class="fa fa-bug fa-5x" aria-hidden="true"></i>
+							</figure>
+							<article class="process-info">
+								<h4>Answer questions</h4>
+								<p>Share your knowledge by pointing people to the right help articles and providing troubleshooting steps. </p>
+								<div class="text-center"><a href="get-involved-forum.html" class="btn btn-primary">Read more</a></div>
+							</article>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="process-layout">
+							<figure class="process-icon">
+								<i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+							</figure>
+							<article class="process-info">
+								<h4>Help users on Twitter</h4>
+								<p>You can help Firefox users on Twitter. It's quick, it's easy, and you don't have to be a tech superstar to do it.</p>
+								<div class="text-center"><a href="get-involved-social.html" class="btn btn-primary">Read more</a></div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end-get-involved-steps-->
+
+		@@include('get-involved-cta.html', {
+      "title": "Need Help?",
+      "desc": "Having trouble with a Mozilla product and want some help?",
+      "button": "Ask a question",
+      "link": "#"
+    })
+
+@@include('footer.html')

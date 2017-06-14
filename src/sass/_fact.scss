@@ -1,0 +1,81 @@
+//-----------------------------------------
+// Facts Area
+//-----------------------------------------
+.fact-area {
+  padding: 40px 0;
+
+  .single-fact {
+    display: inline-block;
+    width: 230px;
+    background-color: $color-light;
+    border: 1px solid $color-grey;
+    padding: 42px 15px;
+    margin: 0 16px 20px;
+
+    @media #{$desktop-device}{
+      width: 195px;
+      padding: 35px 15px;
+    }
+    @media #{$tablet-device}{
+      width: 155px;
+      padding: 25px 15px;
+      margin: 0 10px 20px;
+    }
+    @media #{$large-mobile}{
+      width: 185px;
+      padding: 25px 15px;
+      margin: 0 10px 20px;
+    }
+    @media #{$small-mobile}{
+      width: 220px;
+      padding: 45px 30px;
+    }
+    & img {
+      @media #{$tablet-device}{
+        width: 45px;
+      }
+      @media #{$large-mobile}{
+        width: 45px;
+      }
+    }
+    & .border {
+      height: 2px;
+      width: 55px;
+      background-color: $color-grey;
+      display: block;
+      margin: 15px auto 18px;
+      @media #{$tablet-device}{
+        margin: 10px auto 13px;
+      }
+      @media #{$large-mobile}{
+        margin: 10px auto 13px;
+      }
+    }
+    & h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: $sumo-blue;
+      line-height: 26px;
+      margin-bottom: 17px;
+      @media #{$tablet-device}{
+        font-size: 26px;
+        line-height: 19px;
+        margin-bottom: 10px;
+      }
+      @media #{$large-mobile}{
+        font-size: 30px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
+    }
+    & p {
+      text-transform: uppercase;
+      @media #{$tablet-device}{
+        font-size: 14px;
+      }
+      @media #{$large-mobile}{
+        font-size: 14px;
+      }
+    }
+  }
+}

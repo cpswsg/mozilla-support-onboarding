@@ -1,0 +1,132 @@
+//-----------------------------------------
+// Get Involved
+//-----------------------------------------
+.get-involved {
+	
+	// Heading
+	.get-involved-heading {
+		text-align: center;
+
+		.get-involved-title {
+			font-weight: $font-weight-bold;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		.get-involved-desc {
+
+		}
+	}
+
+	// Intro
+	.get-involved-intro {
+		padding: 40px 0;
+		background-color: $color-light;
+
+		blockquote {
+			font-size: $font-size-base + 6;
+			font-family: $font-family-heading;
+			font-weight: $font-weight-bold;
+			color: $sumo-blue;
+			text-transform: uppercase;
+			text-align: center;
+			border-left: none;
+			margin-top: 25px;
+			border: 4px dotted $sumo-blue;
+		}
+	}
+	
+	// Steps
+	.get-involved-steps {
+		padding: 40px 0;
+
+		.process-layout {
+			border: 1px solid #ccc;
+			background: $color-light;
+			position: relative;
+			margin-bottom: 20px;
+
+			.process-icon {
+				text-align: center;
+				padding: 25px 25px 0;
+			}
+
+			.process-img {
+				position: relative;
+
+				.step {
+					h3 {
+						color: $color-light;
+						bottom: 0;
+						font-size: 30px;
+						position: absolute;
+						right: 20px;
+						text-align: center;
+						z-index: 9999;
+						margin-bottom: 0;
+					}
+					&:after {
+						background: $sumo-blue;
+						bottom: 0;
+						content: "";
+						height: 50px;
+						opacity: 0.7;
+						position: absolute;
+						right: 0;
+						width: 60px;
+						-webkit-transition: all 0.5s ease-out;
+						-moz-transition: all 0.5s ease-out;
+						-o-transition: all 0.5s ease-out;
+						transition: all 0.5s ease-out;
+					}
+				}
+			}
+		}
+		.process-info {
+			padding: 20px 10px;
+			h4 {
+				font-weight: $font-weight-bold;
+				text-transform: uppercase;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	// CTA
+	.get-involved-cta {
+		background-color: $color-light;
+		padding: 40px 0;
+
+		h2 {
+			font-weight: $font-weight-bold;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+
+		.btn-cta {
+			background: $sumo-blue;
+			color: $color-light;
+			font-size: $font-size-base + 6;
+			font-weight: $font-weight-bold;
+			text-transform: uppercase;
+			padding: 10px 28px;
+			margin-top: 30px;
+			-webkit-transition: all 0.5s ease-out;
+			-moz-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+
+			&:hover {
+				background-color: darken( $sumo-blue, 10% );
+				-webkit-transition: all 0.5s ease-out;
+				-moz-transition: all 0.5s ease-out;
+				-o-transition: all 0.5s ease-out;
+				transition: all 0.5s ease-out;
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+//-----------------------------------------
+// Recent Discussion
+//-----------------------------------------
+.recent-discussion {
+  padding: 40px 0;
+  background-color: $color-light;
+
+  .recent-discussion-heading {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .discussion {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+
+    .topic-info {
+      .subject {
+        .pin_icon {
+          float: left;
+          height: 18px;
+          width: 18px;
+          margin-top: 5px;
+          margin-right: 10px;
+          background: transparent url("/assets/images/icons/thumbtack.png") no-repeat 0 0/18px auto;
+        }
+        .solved {
+          float: left;
+          height: 18px;
+          width: 18px;
+          margin-top: 5px;
+          margin-right: 10px;
+          background: transparent url("/assets/images/icons/message_type_solved.png") no-repeat 0 0/18px auto;
+        }
+
+        .topic-link {
+          color: $color-dark;
+          font-size: $font-size-base + 2;
+          padding: 0 0 8px;
+        }
+      }
+      .username {
+        float: left;
+        clear: both;
+        padding-right: 8px;
+        font-size: $font-size-base - 4;
+        text-transform: uppercase;
+      }
+      .topic-post-time {
+        font-size: $font-size-base - 4;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

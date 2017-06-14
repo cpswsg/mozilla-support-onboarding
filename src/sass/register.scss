@@ -1,0 +1,41 @@
+/* Register 
+--------------------------------------*/
+.register {
+	background-color: #fff;
+	padding: 40px 0;
+
+	.register-form {
+
+
+			.fa-asterisk {
+				color: #ea515a;
+			}
+		
+	}
+
+	.register-benefits {
+
+		ul {
+			list-style: none;
+
+			li {
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+}
+
+.sign-in {
+	padding: 40px 0;
+}
+
+
+.panel-group .panel,
+.panel {
+	border-radius: 0;
+}
+.panel-default,
+.panel-default .panel-heading {
+	background-color: #fff;
+}

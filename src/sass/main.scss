@@ -1,0 +1,194 @@
+@import 'variaveis.scss';
+
+html {
+	font-size: $font-size-base;
+}
+body {
+	font-family: $font-family-base;
+	font-weight: $font-weight-light;
+	line-height: $line-height-base;
+	font-size: $font-size-base;
+	color: $color-dark;
+	background-color: $sumo-bg;
+}
+
+h1,h2,h3,h4,h5 {
+	font-weight: $font-weight-light;
+	line-height: $line-height-base;
+	margin: 0;
+}
+
+h1 { font-size: 2.375rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 1rem; }
+
+p {
+	margin-bottom: 20px;
+}
+
+a.link {
+	color: $color-dark;
+}
+
+// Components
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: $sumo-blue;
+	border: none;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: darken( $sumo-blue, 10% );
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
+	}
+}
+
+.alert {
+	margin-top: 40px;
+
+	&.alert-warning {
+		background-color: #fecc5c;
+		color: $color-dark;
+
+		.lnr {
+			font-size: 60px;
+		}
+	}
+}
+
+.breadcrumbs {
+	padding: 10px 0;
+
+	.breadcrumb {
+		background-color: transparent;
+		padding: 8px 0;
+		margin-bottom: 0;
+		font-size: $font-size-base - 4;
+	}
+}
+
+.form-control {
+	border-radius: 0;
+}
+.help-block {
+	font-size: $font-size-base - 4;
+}
+
+
+@import "header.scss";
+
+
+
+// Tiles
+.tiles {
+	padding: 40px 0;
+
+	.category {
+		background-color: $color-light;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 10px;
+		margin-bottom: 30px;
+
+		&:hover {
+			border-color: $sumo-blue;
+		}
+
+		a {
+			color: $color-dark;
+		}
+
+		.media {
+			.fa {
+				padding-top: 10px;
+			}
+			.media-body {
+				padding-top: 10px;
+			}
+			.media-heading {
+				font-weight: $font-weight-bold;
+			}
+			.media-desc {
+
+			}
+		}
+	}
+}
+
+
+@import "forum.scss";
+
+
+.get-involved {
+
+	.main {
+		background: $color-light;
+		padding: 40px 0;
+
+		.get-involved-heading-title {
+			text-transform: uppercase;
+			font-weight: $font-weight-bold
+		}
+
+		.get-involved-items {
+			.item {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@import 'about.scss';
+@import 'fact.scss';
+@import 'get-involved.scss';
+
+@import 'register.scss';
+
+// Powered
+.powered {
+	margin: 20px 0;
+}
+
+// Footer
+.footer {
+	font-size: $font-size-base - 2;
+	color: $color-dark;
+	background-color: $color-light;
+	padding: 40px 0;
+
+	.logo img {
+		width: 115px;
+	}
+
+	a {
+		color: $sumo-blue;
+	}
+
+	.links-social ul.list-inline {
+		margin-bottom: 0;
+
+		> li {
+			padding: 0;
+
+			&::before {
+				content: '\00A0\00B7\00A0';
+				padding-right: 5px;
+			}
+			&.none::before {
+				content: none;
+			}
+		}
+	}
+
+	.license {
+		margin-top: 5px;
+	}
+}
