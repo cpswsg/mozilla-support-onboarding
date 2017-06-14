@@ -22,3 +22,4 @@ sumo.sublime-workspace
 
 ### Build HTML ###
 *.html
+!/src/html/*/*.html

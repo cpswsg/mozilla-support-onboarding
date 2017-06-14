@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  @@include('header.html')
+
+  <body class="get-involved">
+    <!-- header -->
+    <header>
+      @@include('nav-utility.html')
+
+      @@include('nav-main.html')
+    </header>
+    <!-- //header -->
+
+    @@include('intro.html', {
+      "intro-head": "Write Help Articles",
+      "intro-desc": "Improve our help articles! Share your wisdom with the world.",
+      "intro-bg": "linear-gradient(to right, #aaffa9, #11ffbd)"
+    })
+
+    @@include('search.html')
+
+    @@include('breadcrumbs.html', { "active": "Write Help Articles" })
+
+    @@include('get-involved-intro.html', {
+      "title": "Improve our help articles",
+      "desc": "If you like writing and teaching then the Knowledge Base is the place for you. We need contributors that can write, edit or proof read articles in English. Thousands of people are accessing our Knowledge Base every week. Imagine how many people will be helped by you!",
+      "quote": "1 article can be viewed by 400 million users and translated into 70+ languages"
+    })
+
+    <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">How it works</h2>
+    				<p class="get-involved-desc">Getting started contributing to the Knowledge Base starts with signing up, introducing yourself and reading the help documentation. Do this all at your own pace</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "sign-in",
+    				"step-title": "Register",
+    				"step-desc": "All you need is an account to get started! Please remember to read the Community Guidelines",
+    				"step-button": "Sign Up",
+    				"step-button-link": "register.html"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
+
+
+    @@include('get-involved-cta.html', {
+      "title": "Need Help?",
+      "desc": "Having trouble with a Mozilla product and want some help?",
+      "button": "Ask a question",
+      "link": "#"
+    })
+
+@@include('footer.html')

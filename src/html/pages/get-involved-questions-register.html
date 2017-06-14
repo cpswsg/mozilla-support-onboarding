@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  @@include('header.html')
+
+  <body class="get-involved">
+    <!-- header -->
+    <header>
+      @@include('nav-utility.html')
+
+      @@include('nav-main.html')
+    </header>
+    <!-- //header -->
+
+    @@include('intro.html', {
+      "intro-head": "Answer questions",
+      "intro-desc": " Help users in the forums! Where all the action happens.",
+      "intro-bg": "linear-gradient(to right, #00c3ff, #ffff1c)"
+    })
+
+    @@include('search.html')
+
+    @@include('breadcrumbs.html', { "active": "Answer Questions" })
+
+    @@include('get-involved-intro.html', {
+      "title": "Answer questions in the forum",
+      "desc": "From hardcore web developers to 'how do I install Firefox' first time users, everybody needs your help in the forum! Share your knowledge by pointing people to the right help articles and providing troubleshooting steps for their individual questions.",
+      "quote": "Solving 1 issue helps up to 1,000 users a day"
+    })
+
+    <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">How it works</h2>
+    				<p class="get-involved-desc">You do not need to be a tech guru. All you have to do to get started is Register, read the Community Guidelines, read the get started documentation and choose a question from any product topic to answer.</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "sign-in",
+    				"step-title": "Register to see the next steps",
+    				"step-desc": "All you need is an account to get started!",
+    				"step-button": "Sign Up",
+    				"step-button-link": "register.html"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
+
+    @@include('get-involved-cta.html', {
+      "title": "Need Help?",
+      "desc": "Having trouble with a Mozilla product and want some help? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magni tempore temporibus consectetur.",
+      "button": "Ask a Question",
+      "link": "#"
+    })
+
+@@include('footer.html')
