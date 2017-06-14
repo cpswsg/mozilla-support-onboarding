@@ -58,69 +58,50 @@
 	 </section>
 	 <!--end-get-involved-intro-->
 
-		<!--start-get-involved-steps-->
-		<section class="get-involved-steps">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 get-involved-heading">
-						<h2 class="get-involved-title">Pick a way to get involved</h2>
-						<p class="get-involved-desc">All are pretty easy to get started in.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<div class="process-layout">
-							<figure class="process-icon">
-								<i class="fa fa-pencil-square-o fa-5x" aria-hidden="true"></i>
-							</figure>
-							<article class="process-info">
-								<h4>Write Help Articles</h4>
-								<p>If you like writing and teaching then the Knowledge Base is the place for you. Share your wisdom with the world.</p>
-								<div class="text-center"><a href="get-involved-kb-register.html" class="btn btn-primary">Read more</a></div>
-							</article>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<div class="process-layout">
-							<figure class="process-icon">
-								<i class="fa fa-language fa-5x" aria-hidden="true"></i>
-							</figure>
-							<article class="process-info">
-								<h4>Translate help articles</h4>
-								<p>Help articles are not available in your language yet? Let's make Mozilla Support speak your language!</p>
-								<div class="text-center"><a href="get-involved-l10n-register.html" class="btn btn-primary">Read more</a></div>
-							</article>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<div class="process-layout">
-							<figure class="process-icon">
-								<i class="fa fa-bug fa-5x" aria-hidden="true"></i>
-							</figure>
-							<article class="process-info">
-								<h4>Answer questions</h4>
-								<p>Share your knowledge by pointing people to the right help articles and providing troubleshooting steps. </p>
-								<div class="text-center"><a href="get-involved-questions-register.html" class="btn btn-primary">Read more</a></div>
-							</article>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<div class="process-layout">
-							<figure class="process-icon">
-								<i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
-							</figure>
-							<article class="process-info">
-								<h4>Help users on Twitter</h4>
-								<p>You can help Firefox users on Twitter. It's quick, it's easy, and you don't have to be a tech superstar to do it.</p>
-								<div class="text-center"><a href="get-involved-social-register.html" class="btn btn-primary">Read more</a></div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--end-get-involved-steps-->
+	 <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">Pick a way to get involved</h2>
+    				<p class="get-involved-desc">All are pretty easy to get started in.</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "pencil-square-o",
+    				"step-title": "Write Help Articles",
+    				"step-desc": "If you like writing and teaching then the Knowledge Base is the place for you. Share your wisdom with the world.",
+    				"step-button": "Read more",
+    				"step-button-link": "get-involved-kb-register.html"
+    				},
+    				{
+    				"step-icon": "language",
+    				"step-title": "Translate help articles",
+    				"step-desc": "Help articles are not available in your language yet? Let's make Mozilla Support speak your language!",
+    				"step-button": "Read More",
+    				"step-button-link": "get-involved-l10n-register.html"
+    				},
+    				{
+    				"step-icon": "bug",
+    				"step-title": "Answer questions",
+    				"step-desc": "Share your knowledge by pointing people to the right help articles and providing troubleshooting steps.",
+    				"step-button": "Read More",
+    				"step-button-link": "get-involved-questions-register.html"
+    				},
+    				{
+    				"step-icon": "twitter",
+    				"step-title": "Help users on Twitter",
+    				"step-desc": "You can help Firefox users on Twitter. It's quick, it's easy, and you don't have to be a tech superstar to do it.",
+    				"step-button": "Read More",
+    				"step-button-link": "get-involved-social-register.html"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
 
 		@@include('get-involved-cta.html', {
       "title": "Need Help?",
