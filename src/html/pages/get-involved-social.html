@@ -27,30 +27,29 @@
       "quote": "1 tweet can save 1 day"
     })
 
-    @@include('get-involved-steps.html', {
-			"step-title": "Join Us",
-			"step-desc": "Fill out your email address below and we’ll reach out with the next steps!",
-
-      "step-one-icon": "user-plus",
-      "step-one-title": "Join to the new community group",
-      "step-one-desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit unde officia. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-one-button": "Join in the group",
-			
-			"step-two-icon": "user-plus",
-      "step-two-title": "Registration",
-      "step-two-desc": "You need to complete a very simple registration form. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-two-button": "Read more",
-			
-			"step-three-icon": "user-plus",
-      "step-three-title": "Introduce",
-      "step-three-desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit unde officia. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-three-button": "Say Hello",
-			
-			"step-four-icon": "book",
-      "step-four-title": "Documentation",
-      "step-four-desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit unde officia. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-four-button": "Read more"
-    })
+    <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">Join Us</h2>
+    				<p class="get-involved-desc">Fill out your email address below and we’ll reach out with the next steps!</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "user-plus",
+    				"step-title": "Register Link",
+    				"step-desc": "Sign up the form and get your Respond account.",
+    				"step-button": "Register Now",
+    				"step-button-link": "https://goo.gl/forms/GF7wZxG1tYNrusR33"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
 
     @@include('get-involved-cta.html', {
       "title": "Need Help?",

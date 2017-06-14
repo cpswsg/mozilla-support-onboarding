@@ -22,35 +22,48 @@
     @@include('breadcrumbs.html', { "active": "Write Help Articles" })
 
     @@include('get-involved-intro.html', {
-      "title": "Improve our help articles",
-      "desc": "If you like writing and teaching then the Knowledge Base is the place for you. We need contributors that can write, edit or proof read articles in English. Thousands of people are accessing our Knowledge Base every week. Imagine how many people will be helped by you!",
+      "title": "Help us write help articles!",
+      "desc": "Share your wisdom with the world. <br>If you like writing and teaching then the Knowledge Base is the place for you. We need contributors that can write, edit or proof read articles in English. Thousands of people are accessing our Knowledge Base every week. Imagine how many will be helped by you!",
       "quote": "1 article can be viewed by 400 million users and translated into 70+ languages"
     })
 
-    @@include('get-involved-steps.html', {
-			"step-title": "How it works",
-			"step-desc": "Getting started contributing to the Knowledge Base starts with signing up, introducing yourself and reading the help documentation. Do this all at your own pace",
-
-      "step-one-icon": "user-plus",
-      "step-one-title": "Join to the new community group",
-      "step-one-desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit unde officia. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-one-button": "Join in the group",
-			
-			"step-two-icon": "user-plus",
-      "step-two-title": "Registration",
-      "step-two-desc": "You need to complete a very simple registration form. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-two-button": "Read more",
-			
-			"step-three-icon": "user-plus",
-      "step-three-title": "Introduce",
-      "step-three-desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit unde officia. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-three-button": "Say Hello",
-			
-			"step-four-icon": "book",
-      "step-four-title": "Documentation",
-      "step-four-desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit unde officia. Architecto eius quaerat ipsum ut ipsam dolor nisi sunt officiis laudantium eos.",
-      "step-four-button": "Read more"
-    })
+    <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">How it works</h2>
+    				<p class="get-involved-desc">Getting started contributing to the Knowledge Base starts with signing up, introducing yourself and reading the help documentation. Do this all at your own pace</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "microphone",
+    				"step-title": "Introduce yourself",
+    				"step-desc": "Meet other users in your locale and saying hello in the New Contributor Forums.",
+    				"step-button": "Say Hello",
+    				"step-button-link": "#"
+    				},
+    				{
+    				"step-icon": "book",
+    				"step-title": "Get learning",
+    				"step-desc": "It’s time to learn how to use them. Don’t worry, we tell you everything you need to know here.",
+    				"step-button": "Read More",
+    				"step-button-link": "#"
+    				},
+    				{
+    				"step-icon": "comments-o",
+    				"step-title": "Get help (and get social!)",
+    				"step-desc": "Stop by here if you need help or just want to talk to other contributors. Don’t forget to introduce yourself. We love to see new faces.",
+    				"step-button": "Chat in the forums",
+    				"step-button-link": "#"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
 
     @@include('get-involved-cta.html', {
       "title": "Need Help?",

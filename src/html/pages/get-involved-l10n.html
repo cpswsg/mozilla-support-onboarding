@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  @@include('header.html')
+
+  <body class="get-involved">
+    <!-- header -->
+    <header>
+      @@include('nav-utility.html')
+
+      @@include('nav-main.html')
+    </header>
+    <!-- //header -->
+
+    @@include('intro.html', {
+      "intro-head": "Translate Help Articles",
+      "intro-desc": "Let's make Mozilla Support speak your language.",
+      "intro-bg": "linear-gradient(to right, #00c9ff, #92fe9d)"
+    })
+
+    @@include('search.html')
+
+    @@include('breadcrumbs.html', { "active": "Translate Help Articles" })
+
+    @@include('get-involved-intro.html', {
+      "title": "Translate help articles to your language",
+      "desc": "Help articles are not available in your language yet? <br>You want to join the amazing team translating them? You will help millions of users in your language. Pretty heroic, right?",
+      "quote": "Translating 1 article can help 1,000's of users in your language"
+    })
+
+    <!--start-get-involved-steps-->
+    <section class="get-involved-steps">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 get-involved-heading">
+    				<h2 class="get-involved-title">How it works</h2>
+    				<p class="get-involved-desc">Start translating existing articles into your language by reading the documentation, reaching out to a locale lead and talking to the team!</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			@@loop('loop-get-involved-steps.html', [
+    				{
+    				"step-icon": "microphone",
+    				"step-title": "Introduce Yourself!",
+    				"step-desc": "Here you will identify yourself as a community member, and read all of the articles you need to know as a contributor.",
+    				"step-button": "Say Hello",
+    				"step-button-link": "#"
+    				},
+    				{
+    				"step-icon": "user",
+    				"step-title": "Contact the locale lead in your locale",
+    				"step-desc": "If your language already appears, meet the Locale Leads for your language.",
+    				"step-button": "Read More",
+    				"step-button-link": "#"
+    				},
+    				{
+    				"step-icon": "comments-o",
+    				"step-title": "Get Talking!",
+    				"step-desc": "Then introduce yourself to the rest of the team and ask for tips from translators in other locales.",
+    				"step-button": "Chat in the Forums",
+    				"step-button-link": "#"
+    				},
+    				{
+    				"step-icon": "diamond",
+    				"step-title": "New Language?",
+    				"step-desc": "Don’t see your locale or still have questions?",
+    				"step-button": "Contact an Admin",
+    				"step-button-link": "#"
+    				}
+    			])
+    		</div>
+    	</div>
+  	</section>
+  	<!--end-get-involved-steps-->
+
+    @@include('get-involved-cta.html', {
+      "title": "Join with us and get involved",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit est delectus ad praesentium commodi quos nihil ipsum distinctio rem amet repellat facere perferendis eos tempora.",
+      "button": "Become volunteer",
+      "link": "#"
+    })
+
+@@include('footer.html')
