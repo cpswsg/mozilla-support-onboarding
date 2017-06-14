@@ -1,19 +1,27 @@
 {
   "name": "mozilla-support-onboarding",
   "version": "1.0.0",
-  "description": "Mozilla Support",
-  "main": "gulpfile.js",
+  "description": "Mozilla Support Onboarding prototype",
+  "author": "Cynthia Pereira",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/cynthiapereira/mozilla-support-onboarding",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cynthiapereira/mozilla-support-onboarding.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cynthiapereira/mozilla-support-onboarding/issues"
+  },
   "scripts": {
-    "test": "echo \"Erro: nenhum teste estabelecido\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "keywords": [
     "mozilla",
-    "brazil",
     "community",
-    "support"
+    "support",
+    "onboarding"
   ],
-  "author": "Cynthia Pereira",
-  "license": "MPL 2.0",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -26,3 +34,4 @@
     "opn": "^4.0.2"
   }
 }
+
